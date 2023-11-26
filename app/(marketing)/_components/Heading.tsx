@@ -33,11 +33,13 @@ const Heading = () => {
       )}
 
       {!isLoading && !isAuthenticated && (
-        <Button asChild>
-          <Link href={"/"}>
-            Get Jotion Free <ArrowRight className="h-4 w-4 ml-2" />
-          </Link>
-        </Button>
+        <SignInButton mode="modal">
+          <Button asChild>
+            <Link href={"/"}>
+              Get Jotion Free <ArrowRight className="h-4 w-4 ml-2" />
+            </Link>
+          </Button>
+        </SignInButton>
       )}
     </div>
   );
